@@ -1,0 +1,117 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Andika", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row.row-center {
+  justify-content: center;
+}
+
+.row.row-between {
+  justify-content: space-between;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(99, 221, 250, 1) 0%,
+    rgba(148, 52, 52, 1) 55%
+  );
+}
+
+input[type="button"]:hover {
+  opacity: 0.7;
+  transition: opacity ease 0.4s;
+}
+
+.todo {
+  inline-size: 500px;
+  margin: 0 auto;
+  padding: 16px 18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.todo__head__title h1 {
+  text-align: center;
+}
+
+.todo__head__create input[type="text"] {
+  border: 1px solid #6366f1;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.todo__head__create input[type="button"] {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #6366f1;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo__body {
+  margin-top: 24px;
+}
+
+.filter__empty {
+  flex: 2;
+}
+
+.filter--wrap {
+  flex: 3;
+}
+
+.todo__body__list {
+  margin-top: 24px;
+}
+
+.list__item {
+  background-color: #f1f5f9;
+  padding: 12px 12px;
+  font-size: 1.7rem;
+  border-radius: 4px;
+}
+
+.todo__foot {
+  margin-top: 24px;
+}
+
+.foot__total {
+  font-size: 1.6rem;
+}
+
+.foot__button input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background-color: #ef4444;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}

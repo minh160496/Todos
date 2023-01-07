@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;500;600&family=Passion+One:wght@700;900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="todo">
+            <div class="todo__head">
+                <div class="todo__head__title">
+                    <h1>TODO APP</h1>
+                </div>
+
+                <div class="todo__head__create">
+                    <div class="todo__head__create__input row">
+                        <input type="text" />
+                        <input type="button" value="CREATE">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo__body">
+                <div class="todo__body__filter row">
+                    <div class="filter__empty"></div>
+                    <div class="filter--wrap row row-between">
+                        <div class="filter__item">
+                            <label for="all">All</label>
+                            <input type="radio" id="all" name="filter" checked>
+                        </div>
+                        <div class="filter__item">
+                            <label for="completed">Completed</label>
+                            <input type="radio" id="completed" name="filter">
+                        </div>
+                        <div class="filter__item">
+                            <label for="active">Active</label>
+                            <input type="radio" id="active" name="filter">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo__body__list">
+                    <div class="list__item">
+                        <div class="list__item__input">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Learn javascript</label>
+                        </div>
+
+                        <div class="list__item__icon">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo__foot row row-between">
+                <div class="foot__total">
+                    <span>You have 2 pending task</span>
+                </div>
+
+                <div class="foot__button">
+                    <input type="button" value="Clear All">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/script.js"></script>
+
+</html>
