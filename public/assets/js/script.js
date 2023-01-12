@@ -1,15 +1,6 @@
-let headersList = {
-  Accept: "*/*",
-  "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-};
+import { attach } from "./store.js";
+import App from "./component/app.js";
 
-fetch("http://localhost:3000/todos", {
-  method: "GET",
-  headers: headersList,
-})
-  .then((respon) => respon.json())
-  .then((data) => console.log(data));
+const appDOM = document.querySelector(".app");
 
-function htmls([first, ...strings], ...values) {
-  values.reduce((acc, curr) => acc.concat(acc, curr), [first]);
-}
+attach(App, appDOM);

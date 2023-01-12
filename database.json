@@ -1,14 +1,9 @@
 {
   "todos": [
     {
-      "id": 1,
-      "name": "Learn Javascript",
-      "isCompleted": false
-    },
-    {
-      "id": 2,
-      "name": "Learn React",
-      "isCompleted": false
+      "name": "Learn react js",
+      "isCompleted": true,
+      "id": 1
     }
   ]
 }
